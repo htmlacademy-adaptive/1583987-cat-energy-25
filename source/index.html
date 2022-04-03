@@ -32,7 +32,7 @@
 </header>
 <main class="main-container">
   <h1 class="visually-hidden">Функциональное
-      питание для котов</h1>
+    питание для котов</h1>
   <section class="main-banner">
     <div class="main-banner__wrapper">
       <h2 class="main-banner__title">Функциональное
@@ -41,55 +41,46 @@
       <a class="main-banner__button button" href="#">подобрать программу</a>
     </div>
   </section>
-  <section class="slim">
-    <div class="slim__wrapper program">
-      <h2 class="slim__title program__title">похудение</h2>
-      <img class="slim__image program__image" src="img/cat_back.svg" alt="сидящий кот">
-      <p class="slim__text program__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+  <section class="program">
+    <div class="program__wrapper">
+      <h2 class="program__title program__title--slim">похудение</h2>
+      <p class="program__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
         Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
       </p>
-      <a class="slim__catalog-link program__link" href="#">каталог slim</a>
+      <a class="program__link" href="#">каталог slim</a>
     </div>
   </section>
-  <section class="pro">
-    <div class="pro__wrapper program">
-      <h2 class="pro__title program__title">Набор массы</h2>
-      <img class="pro__image program__image" src="img/cat_back_walk.svg" alt="идущий кот">
-      <p class="pro__text program__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
+  <section class="program">
+    <div class="program__wrapper">
+      <h2 class="program__title program__title--pro">Набор массы</h2>
+      <p class="program__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
         поможет вашему коту нарастить необходимые мышцы!
       </p>
-      <a class="pro__catalog-link program__link" href="#">каталог pro</a>
+      <a class="program__link" href="#">каталог pro</a>
     </div>
   </section>
   <section class="features">
     <div class="features__wrapper">
       <h2 class="features__title">Как это работает</h2>
       <ul class="features__list">
-        <li class="features__item">
-          <img class="features__img" src="img/leaf.svg" alt="Листок">
-          <p class="features__text">Функциональное питание
+        <li class="features__item features__item--one">
+          <p class="features__text features__text--leaf">Функциональное питание
             содержит только полезные
             питательные вещества.</p>
-          <p class="features__number">1</p>
         </li>
-        <li class="features__item">
-          <img class="features__img" src="img/powder.svg" alt="Порошок">
-          <p class="features__text">Выпускается в виде порошка,
+        <li class="features__item features__item--two">
+          <p class="features__text features__text--powder">Выпускается в виде порошка,
             который нужно лишь залить
             кипятком и готово.</p>
-          <p class="features__number">2</p>
         </li>
-        <li class="features__item">
-          <img class="features__img" src="img/cutlery.svg" alt="Листок">
-          <p class="features__text">Замените один-два приема
+        <li class="features__item features__item--free">
+          <p class="features__text features__text--cutlery">Замените один-два приема
             обычной еды на наше
             функциональное питание.</p>
-          <p class="features__number">3</p>
         </li>
-        <li class="features__item">
-          <img class="features__img" src="img/watch.svg" alt="Листок">
-          <p class="features__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-          <p class="features__number">4</p>
+        <li class="features__item features__item--for">
+          <p class="features__text features__text--watch">Уже через месяц наслаждайтесь изменениями к лучшему вашего
+            питомца!</p>
         </li>
       </ul>
     </div>
@@ -101,27 +92,36 @@
         Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
         в день.
       </p>
-    </div>
-    <table class="example__effects">
-      <tbody>
-      <tr class="example__effects-tr">
-        <td class="example__effects-index">5 КГ</td>
-        <td class="example__effects-index">60 ДНЕЙ</td>
-      </tr>
-      <tr class="example__effects-tr">
-        <td class="example__effects-description">снижение веса</td>
-        <td class="example__effects-description">затрачено времени</td>
-      </tr>
-      </tbody>
-    </table>
-    <p class="example__text-effect">Затраты на питание: 15 000 РУБ. </p>
-    <div class="example__range-wrapper">
-      <img class="example__range-img-fat" src="img/cat-fat.jpg" alt="толстый кот">
-
-      <img class="example__range-img-skinny" src="img/cat-skinny.jpg" alt="худой кот">
-      <p class="example__range-label-name">было</p>
-      <input type="range" class="example__range">
-      <p class="example__range-label-name">стало</p>
+      <ul class="example__list">
+        <li class="example__item">
+          <div class="example__item-wrapper">
+            <p class="example__item-index">5 КГ</p>
+            <p class="example__item-description">снижение веса</p>
+          </div>
+        </li>
+        <li class="example__item">
+          <div class="example__item-wrapper">
+            <p class="example__item-index">60 ДНЕЙ</p>
+            <p class="example__item-description">затрачено времени</p>
+          </div>
+        </li>
+      </ul>
+      <p class="example__text-effect">Затраты на питание: 15 000 РУБ. </p>
+      <div class="example__range">
+        <img class="example__range-img-fat" src="img/cat-fat.jpg" alt="толстый кот">
+        <img class="example__range-img-skinny" src="img/cat-skinny.jpg" alt="худой кот">
+        <div class="example__range-scale">
+          <div class="example__range-bar">
+            <span class="example__range-label-name">было</span>
+            <div class="example__range-toggle-wrapper">
+              <button class="example__range-toggle " type="button">
+                <span class="visually-hidden">Изменить степень упитанности</span>
+              </button>
+            </div>
+            <span class="example__range-label-name">стало</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <section class="contacts">
@@ -137,7 +137,9 @@
 </main>
 <footer class="main-footer">
   <div class="main-footer__logo">
+    <a  class="main-footer__logo-link" href="#">
     <img class="main-footer__logo-image logo-text" src="img/logo2.svg/" alt="Кэт Энерджи">
+    </a>
   </div>
   <div class="main-footer__social social">
     <ul class="social__list">
@@ -153,8 +155,12 @@
     </ul>
   </div>
   <div class="main-footer__copyright copyright">
-    <p class="copyright__text">HTML Academy</p>
-    <img class="copyright__logo" src="img/logo_html.svg" alt="Логотип Html Academy" >
+    <a class="main-footer__copyright-link copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+    HTML Academy
+      <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
+      </svg>
+    </a>
   </div>
 </footer>
 
