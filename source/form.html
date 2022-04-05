@@ -12,7 +12,7 @@
       <img class="main-header__logo-text logo-text" src="img/logo2.svg" alt="Кэт энерджи">
     </a>
     <nav class="main-nav">
-      <button class="main-nav-toggle"><span class="visually-hidden">Открыть меню</span>
+      <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -39,20 +39,18 @@
       программу питания для вашего кота</p>
     <form action="https://echo.htmlacademy.ru/" class="form-selection__form form" method="get">
       <fieldset class="form__group">
-        <legend class="form__group-title visually-hidden">
-        </legend>
         <ul class="form__group-list">
           <li class="form__group-item">
             <label class="form__group-label" for="name">
               ИМЯ:*
             </label>
-            <input type="text" class="form__group-input-text" id="name" name="name" placeholder="барсик">
+            <input type="text" class="form__group-input-text" id="name" name="name" placeholder="барсик" required>
           </li>
           <li class="form__group-item">
             <label class="form__group-label" for="wait">
               Вес (кг):*
             </label>
-            <input type="text" class="form__group-input-text" id="wait" name="wait" placeholder="7">
+            <input type="text" class="form__group-input-text" id="wait" name="wait" placeholder="7" required>
           </li>
           <li class="form__group-item">
             <label class="form__group-label" for="age">
@@ -63,25 +61,24 @@
         </ul>
       </fieldset>
       <fieldset class="form__group">
-        <legend class="form__group-title visually-hidden"></legend>
         <ul class="form__group-list">
           <li class="form__group-item">
             <label class="form__group-label">
-              <input type="radio" class="form__group-control visually-hidden" name="slim" checked>
+              <input type="radio" class="form__group-control visually-hidden" name="program" value="slim" checked>
               <span class="form__group-control-mark"></span>
               <span class="form__group-control-item">похудение</span>
             </label>
           </li>
           <li class="form__group-item">
             <label class="form__group-label">
-              <input type="radio" class="form__group-control visually-hidden" name="pro">
+              <input type="radio" class="form__group-control visually-hidden" name="program" value="pro">
               <span class="form__group-control-mark"></span>
               <span class="form__group-control-item">Набор массы</span>
             </label>
           </li>
           <li class="form__group-item">
             <label class="form__group-label">
-              <input type="radio" class="form__group-control visually-hidden" name="need advice">
+              <input type="radio" class="form__group-control visually-hidden" name="program" value="need advice">
               <span class="form__group-control-mark"></span>
               <span class="form__group-control-item">Не знаю (Нужен ваш совет)</span>
             </label>
@@ -97,20 +94,22 @@
             <label class="form__group-label" for="email">
               E-mail:*
             </label>
-            <input type="email" class="form__group-input-text form__group-input-text--img" id="email" name="name" placeholder="kuklachev@gmail.com">
+            <input type="email" class="form__group-input-text form__group-input-text--img" id="email" name="name" placeholder="kuklachev@gmail.com" required>
           </li>
           <li class="form__group-item">
             <label class="form__group-label" for="tel">
               Телефон:*
             </label>
-            <input type="tel" class="form__group-input-text form__group-input-text--img" id="tel" name="name" placeholder="8 (960) 900-60-90">
+            <input type="tel" class="form__group-input-text form__group-input-text--img" id="tel" name="tel" placeholder="8 (960) 900-60-90" required>
           </li>
         </ul>
       </fieldset>
       <fieldset class="form__group">
         <legend class="form__group-title">Комментарий
         </legend>
-        <textarea class="form__group-input-textarea">Расскажите обо всех повАдках кота</textarea>
+        <label class="visually-hidden">Комментарий
+        <textarea class="form__group-input-textarea" name="comment" placeholder="Расскажите обо всех повАдках кота"></textarea>
+        </label>
       </fieldset>
       <fieldset class="form__group">
         <legend class="form__group-title">Дополнительно</legend>
@@ -181,7 +180,7 @@
     </ul>
   </div>
   <div class="main-footer__copyright copyright">
-    <a class="main-footer__copyright-link copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
       HTML Academy
       <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
