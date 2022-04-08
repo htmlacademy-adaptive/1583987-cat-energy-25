@@ -1,0 +1,26 @@
+.additional-catalog__title {
+  margin: 15px 0 50px 0;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  text-align: start;
+}
+
+.additional-catalog__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 280px;
+  gap: 30px;
+}
+
+.additional-catalog__card {
+  list-style: none;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 280px;
+}
+

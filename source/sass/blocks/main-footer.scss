@@ -1,0 +1,25 @@
+.main-footer {
+  background-color: #f2f2f2;
+  padding-top: 1px;
+}
+
+.main-footer__wrapper {
+  margin: 40px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.social__list {
+  margin: 0;
+}
+
+.social__item {
+  margin: 0;
+  list-style: none;
+}
+
+.copyright__link {
+  font-size: 16px;
+  text-decoration: none;
+  color: #444444;
+}

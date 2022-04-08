@@ -1,0 +1,94 @@
+.example {
+  background-color: #eaeaea;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.example__wrapper {
+  margin: 25px auto 40px auto;
+}
+
+.example__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  text-align: start;
+  margin: 0 0 40px 0;
+}
+
+.example__text {
+  margin: 0 0 20px 0;
+}
+
+.example__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__item {
+  margin: 0;
+  list-style: none;
+}
+
+.example__item-wrapper {
+  width: 124px;
+  padding-top: 15px;
+}
+
+.example__item-index {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  margin: 0 0 8px 0;
+}
+
+.example__item-description {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  margin: 0;
+}
+
+.example__text-effect {
+  margin: 20px 0 40px 0;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.example__range-img-fat {
+  display: block;
+}
+
+.example__range-bar {
+  display: flex;
+  width: 210px;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.example__range-label-name {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
