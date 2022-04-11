@@ -8,12 +8,10 @@
 <body class="page__body">
 <header class="main-header">
   <div class="main-header__wrapper wrapper">
-    <a href="#" class="main-header__logo-link">
+    <div class="main-header__logo-wrapper">
       <img class="main-header__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи">
-    </a>
-    <a href="#" class="main-header__logo-link">
       <img class="main-header__logo-text logo-text" src="img/logo2.svg" width="100" height="18" alt="Кэт энерджи">
-    </a>
+    </div>
     <nav class="main-nav">
       <button class="main-nav__toggle main-nav__toggle--open"><span class="visually-hidden">Открыть меню</span>
       </button>
@@ -34,10 +32,11 @@
   </div>
 </header>
 <main class="main-container">
-  <h1 class="visually-hidden">Каталог продукции</h1>
+  <div class="main-container__wrapper wrapper">
+  <h1 class="catalog__title">Каталог продукции</h1>
+  </div>
   <section class="catalog">
     <div class="catalog__wrapper wrapper">
-      <h2 class="catalog__title">Каталог продукции</h2>
       <ul class="catalog__list">
         <li class="catalog__card card">
           <img src="img/cat-energy-chicken500.png" alt="Cat Energy PRO 500 г" class="card__image">
@@ -269,8 +268,8 @@
           <a class="card__button button" href="#">заказать</a>
         </li>
         <li class=" catalog__card catalog__card--show-more card card--show-more">
-          <h3 class="card__title card__title--show-more">Показать еще 100500 товаров</h3>
-          <p class="card__text card__text--show-more">На самом деле вкусов гораздо больше!</p>
+          <h3 class="card__title">Показать еще 100500 товаров</h3>
+          <p class="card__text ">На самом деле вкусов гораздо больше!</p>
           <a class="button card__button card__button--show-more " href="#">показать
             все</a>
         </li>

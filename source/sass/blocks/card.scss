@@ -9,13 +9,38 @@
   }
 }
 
+.card__title {
+  font-family: $font_oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $special_dark-grey-2;
+  text-align: center;
+  margin: 0;
+}
+
 .card__image {
   grid-row: 1/3;
 }
 
+.card__list {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.card__text {
+  margin: 0;
+  padding: 8px 0 21px 0;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
 .card__button.card__button--show-more {
-  background-color: #f2f2f2;
+  background-color: $basic_grey;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $special_dark-grey;
 }

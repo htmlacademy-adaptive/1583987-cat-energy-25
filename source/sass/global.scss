@@ -11,7 +11,8 @@
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/oswaldmedium.woff2") format("woff2");
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
   font-display: swap;
 }
 
@@ -23,9 +24,9 @@ body {
   line-height: 18px;
   font-family: "Arial", sans-serif;
   font-weight: 400;
-  color: #444444;
+  color: $special_dark-grey;
   font-style: normal;
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .visually-hidden {
@@ -43,4 +44,5 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
 }

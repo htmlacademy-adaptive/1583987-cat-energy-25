@@ -1,12 +1,11 @@
 .additional-catalog__title {
   margin: 15px 0 50px 0;
-  font-family: "Oswald", sans-serif;
+  font-family: $font_oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  color: #000000;
-  text-align: start;
+  color: $black;
 }
 
 .additional-catalog__list {
@@ -22,4 +21,20 @@
   margin: 0;
   display: grid;
   grid-template-columns: 280px;
+  gap: 15px;
+}
+
+.additional-catalog__card-title {
+  font-family: $font_oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.additional-catalog__card-item {
+  font-size: 14px;
+  line-height: 14px;
 }

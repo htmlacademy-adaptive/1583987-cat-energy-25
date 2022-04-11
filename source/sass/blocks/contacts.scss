@@ -5,12 +5,12 @@
 }
 
 .contacts__slogan {
-  font-family: "Oswald", sans-serif;
+  font-family: $font_oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #111111;
+  color: $special_black;
   text-align: start;
   text-transform: uppercase;
   margin: 0;
@@ -25,5 +25,5 @@
 }
 
 .contacts--form {
-  background-color: #f2f2f2;
+  background-color: $basic_grey;
 }
