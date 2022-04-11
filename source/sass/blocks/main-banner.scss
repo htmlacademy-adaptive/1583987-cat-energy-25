@@ -1,0 +1,33 @@
+.main-banner__container {
+  background-image: url("../img/greencat-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 25px 0 164px 0;
+  background-color: $basic_green;
+}
+
+.main-banner__title {
+  font-family: $font_oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: $white;
+  margin: 0 0 25px 0;
+}
+
+.main-banner__text {
+  font-family: $font_oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $white;
+  text-align: center;
+}
+
+.main-banner__wrapper {
+  margin: -135px auto 0 auto;
+}

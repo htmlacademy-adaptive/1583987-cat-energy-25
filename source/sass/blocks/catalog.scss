@@ -1,0 +1,25 @@
+.catalog__title {
+  margin: 50px 0 25px 0;
+  font-family: $font_oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $black;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 280px;
+  gap: 19px;
+}
+
+.catalog__card {
+  padding: 10px 0 15px 0;
+
+  &--show-more {
+    padding: 90px 0 25px 0;
+  }
+}

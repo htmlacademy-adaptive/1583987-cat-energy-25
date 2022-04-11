@@ -1,0 +1,29 @@
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+
+.contacts__slogan {
+  font-family: $font_oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $special_black;
+  text-align: start;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.contacts__address {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  text-align: start;
+  width: 139px;
+}
+
+.contacts--form {
+  background-color: $basic_grey;
+}
