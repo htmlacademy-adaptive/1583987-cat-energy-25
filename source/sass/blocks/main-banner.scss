@@ -31,3 +31,88 @@
 .main-banner__wrapper {
   margin: -135px auto 0 auto;
 }
+
+.main-banner__img-tablet {
+  display: none;
+}
+
+.main-banner__img-desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-banner__img {
+    display: none;
+  }
+
+  .main-banner__img-tablet {
+    display: block;
+  }
+
+  .main-banner__container {
+    background-image: none;
+    background-color: $white;
+    padding: 0;
+  }
+
+  .main-banner__title {
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+    margin-left: 87px;
+    margin-top: 30px;
+    max-width: 414px;
+    text-align: unset;
+  }
+
+  .main-banner__text {
+    font-size: 20px;
+    line-height: 20px;
+    color: $black;
+    margin-left: 87px;
+    text-align: unset;
+  }
+
+  .main-banner__wrapper {
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .button.main-banner__button {
+    position: absolute;
+    font-size: 20px;
+    line-height: 20px;
+    min-width: 244px;
+    left: 87px;
+    top: 29px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-banner__img-tablet {
+    display: none;
+  }
+
+  .main-banner__img-desktop {
+    position: absolute;
+    top: -550px;
+    left: 448px;
+    display: block;
+  }
+
+  .button.main-banner__button {
+    top: -190px;
+  }
+
+  .main-banner__title {
+    padding-top: 223px;
+    margin-top: 0;
+  }
+
+  .main-banner__container {
+    background-image: url("../img/greencat desktop.png");
+    background-position: right 0 top 0;
+    background-size: 50% auto;
+    height: 696px;
+  }
+}

@@ -27,3 +27,19 @@
 .contacts--form {
   background-color: $basic_grey;
 }
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__wrapper {
+    position: absolute;
+    background-color: $white;
+    width: 565px;
+    padding: 55px 80px;
+    box-sizing: border-box;
+    top: 70px;
+    left: 110px;
+  }
+}
