@@ -1,12 +1,9 @@
-.program__wrapper {
-  width: 280px;
+.programs__wrapper {
   margin: 20px auto 0 auto;
-  background: $basic_grey;
-  padding: 30px 20px 20px 20px;
   box-sizing: border-box;
 }
 
-.program__title {
+.programs__title {
   font-family: $font_oswald;
   font-style: normal;
   font-weight: 400;
@@ -18,11 +15,11 @@
   margin: 0 0 30px 0;
 }
 
-.program__text {
+.programs__text {
   margin: 0 0 40px 0;
 }
 
-.program__link {
+.programs__link {
   text-decoration: none;
   font-family: $font_oswald;
   font-style: normal;
@@ -32,4 +29,24 @@
   text-align: start;
   text-transform: uppercase;
   color: $black;
+}
+
+.programs__list {
+  margin-top: 0;
+  padding: 0;
+}
+
+.programs__item {
+  list-style: none;
+  margin-bottom: 20px;
+  padding: 30px 20px 20px 20px;
+  background: $basic_grey;
+}
+
+@media (min-width: $desktop-width) {
+  .programs__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 80px;
+  }
 }

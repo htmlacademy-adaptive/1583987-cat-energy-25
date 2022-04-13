@@ -1,5 +1,5 @@
 .features__wrapper {
-  margin: 20px auto 50px auto;
+  margin: 0 auto 50px auto;
 }
 
 .features__title {
@@ -28,4 +28,18 @@
 
 .features__text {
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .features__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__list {
+    gap: 40px 73px;
+  }
 }

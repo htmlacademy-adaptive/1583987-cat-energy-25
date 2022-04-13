@@ -4,7 +4,7 @@
 }
 
 .main-footer__wrapper {
-  margin: 40px 20px 20px 20px;
+  margin: 40px auto 20px auto;
   display: flex;
   flex-direction: column;
 }
@@ -22,4 +22,11 @@
   font-size: 16px;
   text-decoration: none;
   color: $special_dark-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
