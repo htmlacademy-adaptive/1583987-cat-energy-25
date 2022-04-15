@@ -1,0 +1,38 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toggle {
+  padding: 0;
+  border: none;
+  width: 24px;
+  height: 17px;
+  cursor: pointer;
+  display: block;
+}
+
+.main-nav__wrapper {
+  position: absolute;
+  width: 320px;
+  top: 38px;
+  left: -278px;
+  background: $white;
+  z-index: 2;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__wrapper {
+    position: unset;
+    width: unset;
+    background-color: transparent;
+  }
+}

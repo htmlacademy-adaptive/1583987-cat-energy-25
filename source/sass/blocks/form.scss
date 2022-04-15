@@ -86,3 +86,53 @@
   color: $black;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .form__group-list--additional {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 30px 120px;
+  }
+
+  .form__button-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 60px;
+  }
+
+  .form__button {
+    margin-right: 60px;
+  }
+
+  .form__text {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-selection__wrapper-questionary {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 80px;
+  }
+
+  .form__group-list--contacts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 80px;
+  }
+
+  .form__group-list--additional {
+    gap: 30px 104px;
+  }
+
+  .form__button-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 80px;
+  }
+
+  .form__button {
+    margin-right: 0;
+  }
+}

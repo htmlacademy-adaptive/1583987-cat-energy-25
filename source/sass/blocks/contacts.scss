@@ -28,6 +28,13 @@
   background-color: $basic_grey;
 }
 
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    padding: 55px 40px;
+    box-sizing: border-box;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .contacts {
     position: relative;
