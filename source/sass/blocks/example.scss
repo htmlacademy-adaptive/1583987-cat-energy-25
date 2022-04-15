@@ -105,7 +105,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .example__wrapper-text {
+  .example__wrapper-effect {
     display: flex;
     justify-content: space-between;
   }
@@ -130,11 +130,11 @@
     justify-content: space-between;
   }
 
-  .example__wrapper-part1 {
+  .example__wrapper-text {
     width: 435px;
   }
 
-  .example__wrapper-text {
+  .example__wrapper-effect {
     display: block;
   }
 }

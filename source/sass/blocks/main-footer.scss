@@ -4,7 +4,7 @@
 }
 
 .main-footer__wrapper {
-  margin: 40px auto 20px auto;
+  padding: 40px 0 20px 0;
   display: flex;
   flex-direction: column;
 }
@@ -28,5 +28,6 @@
   .main-footer__wrapper {
     flex-direction: row;
     justify-content: space-between;
+    padding: 60px 0;
   }
 }
