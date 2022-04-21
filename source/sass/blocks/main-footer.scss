@@ -4,13 +4,48 @@
 }
 
 .main-footer__wrapper {
-  margin: 40px auto 20px auto;
+  padding: 40px 0 20px 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.main-footer__logo {
+  padding-bottom: 30px;
+  width: 100%;
+  border-bottom: 1px solid $special_grey-6;
+}
+
+.main-footer__logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-footer__social {
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid $special_grey-6;
 }
 
 .social__list {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
+  padding: 0;
+  width: 104px;
+  height: 22px;
 }
 
 .social__item {
@@ -18,15 +53,90 @@
   list-style: none;
 }
 
-.copyright__link {
+.social__link {
+  display: block;
+  width: 28px;
+  height: 22px;
+
+  svg {
+    width: 28px;
+    height: 22px;
+  }
+
+  &:hover path {
+    fill: $basic_green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active path {
+    fill: $basic_green;
+  }
+}
+
+.main-footer__copyright {
+  padding-top: 20px;
+  width: 100%;
+}
+
+.main-footer__copyright-link-text {
   font-size: 16px;
-  text-decoration: none;
   color: $special_dark-grey;
+  width: 114px;
+  padding-right: 20px;
+}
+
+.main-footer__copyright-link {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  svg {
+    width: 27px;
+  }
+
+  &:hover path {
+    fill: $basic_green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active path {
+    fill: $basic_green;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .main-footer__wrapper {
     flex-direction: row;
     justify-content: space-between;
+    padding: 60px 0 55px 0;
+  }
+
+  .main-footer__logo {
+    padding-bottom: 0;
+    border-bottom: none;
+    width: fit-content;
+  }
+
+  .main-footer__logo-link {
+    justify-content: start;
+  }
+
+  .main-footer__social {
+    padding: 0;
+    width: fit-content;
+    justify-content: start;
+    border-bottom: none;
+  }
+
+  .main-footer__copyright {
+    width: 163px;
+    padding-top: 0;
   }
 }

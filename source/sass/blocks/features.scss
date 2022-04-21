@@ -7,7 +7,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 1.11;
   color: $black;
   text-align: start;
   margin: 0 0 40px 0;
@@ -28,18 +28,97 @@
 
 .features__text {
   margin: 0;
+  padding: 0 0 0 80px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: center left 0;
+  background-size: 60px 60px;
+}
+
+.features__text--leaf {
+  background-image: url("../img/leaf.svg");
+}
+
+.features__text--powder {
+  background-image: url("../img/powder.svg");
+}
+
+.features__text--fork {
+  background-image: url("../img/fork.svg");
+}
+
+.features__text--watch {
+  background-image: url("../img/watch.svg");
 }
 
 @media (min-width: $tablet-width) {
   .features__list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 40px 60px;
+    grid-template-columns: repeat(2, 250px);
+    gap: 40px 135px;
+    counter-reset: section;
+  }
+
+  .features__item {
+    position: relative;
+    padding-top: 40px;
+    list-style: none;
+
+    &::before {
+      counter-increment: section;
+      content: counter(section) "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-family: $font_oswald;
+      font-size: 280px;
+      line-height: 1;
+      font-style: normal;
+      font-weight: 400;
+      color: $basic_grey;
+      z-index: -1;
+    }
+  }
+
+  .features__title {
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 30px;
+  }
+
+  .features__text {
+    font-size: 16px;
+    padding: 110px 0 60px 0;
+    height: unset;
+    background-position: 0 0;
+    background-size: 80px 80px;
+  }
+
+  .features__text--leaf {
+    background-image: url("../img/leaf.svg");
+  }
+
+  .features__text--powder {
+    background-image: url("../img/powder.svg");
+  }
+
+  .features__text--fork {
+    background-image: url("../img/fork.svg");
+  }
+
+  .features__text--watch {
+    background-image: url("../img/watch.svg");
   }
 }
 
 @media (min-width: $desktop-width) {
+  .features__wrapper {
+    margin: 0 auto 0 auto;
+    padding-bottom: 30px;
+  }
+
   .features__list {
+    grid-template-columns: repeat(4, 250px);
     gap: 40px 73px;
   }
 }

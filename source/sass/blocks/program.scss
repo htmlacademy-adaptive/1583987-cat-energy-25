@@ -8,15 +8,16 @@
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 37px;
+  line-height: 1.54;
   text-transform: uppercase;
   color: $black;
-  text-align: center;
-  margin: 0 0 30px 0;
+  margin: 0 0 30px 70px;
 }
 
 .programs__text {
-  margin: 0 0 40px 0;
+  margin: 0 0 20px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $special_grey-6;
 }
 
 .programs__link {
@@ -25,10 +26,19 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   text-align: start;
   text-transform: uppercase;
   color: $black;
+  padding-right: 50px;
+  background-image: url("../img/arrow.svg");
+  background-size: 32px 10px;
+  background-repeat: no-repeat;
+  background-position: center right 0;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .programs__list {
@@ -41,12 +51,100 @@
   margin-bottom: 20px;
   padding: 30px 20px 20px 20px;
   background: $basic_grey;
+
+  &--slim {
+    background-image: url("../img/cat_back.svg");
+    background-repeat: no-repeat;
+    background-position: top 21px left 22px;
+    background-size: 50px 53px;
+  }
+
+  &--pro {
+    background-image: url("../img/cat_walk.svg");
+    background-repeat: no-repeat;
+    background-position: top 24px left 13px;
+    background-size: 67px 50px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .programs__wrapper {
+    margin: 0 auto;
+  }
+
+  .programs__title {
+    font-size: 36px;
+    line-height: 1;
+    margin: 0 0 25px 0;
+  }
+
+  .programs__item {
+    list-style: none;
+    margin-bottom: 30px;
+    padding: 75px 315px 55px 50px;
+
+    &--slim {
+      background-image: url("../img/cat_back-tablet.svg");
+      background-repeat: no-repeat;
+      background-position: top 80px right 60px;
+      background-size: 200px 211px;
+    }
+
+    &--pro {
+      background-image: url("../img/cat_walk-tablet.svg");
+      background-repeat: no-repeat;
+      background-position: top 80px right 30px;
+      background-size: 268px 200px;
+    }
+  }
+
+  .programs__text {
+    font-size: 16px;
+    margin-bottom: 45px;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .programs__link {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .programs__wrapper {
+    margin: 80px auto 0 auto;
+  }
+
   .programs__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 80px;
+  }
+
+  .programs__title {
+    margin: 0 0 70px 165px;
+  }
+
+  .programs__text {
+    margin-bottom: 20px;
+  }
+
+  .programs__item {
+    padding-right: 60px;
+
+    &--slim {
+      background-image: url("../img/cat_back-desktop.svg");
+      background-repeat: no-repeat;
+      background-position: top 40px left 50px;
+      background-size: 100px 106px;
+    }
+
+    &--pro {
+      background-image: url("../img/cat_back-walk.svg");
+      background-repeat: no-repeat;
+      background-position: top 45px left 30px;
+      background-size: 134px 100px;
+    }
   }
 }
