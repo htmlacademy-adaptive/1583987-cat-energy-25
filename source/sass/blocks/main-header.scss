@@ -31,6 +31,10 @@
   display: none;
 }
 
+.logo-text {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
   .main-header__wrapper {
     margin: 25px auto;
@@ -63,5 +67,9 @@
   .main-header__wrapper {
     position: absolute;
     margin: 50px auto 25px auto;
+  }
+
+  .main-header__wrapper--form {
+    position: static;
   }
 }

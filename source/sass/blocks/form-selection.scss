@@ -20,3 +20,17 @@
   text-transform: uppercase;
   margin-bottom: 40px;
 }
+
+@media (min-width: $tablet-width) {
+  .form-selection__wrapper {
+    padding: 0 40px;
+    box-sizing: border-box;
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-selection__wrapper {
+    padding: 0;
+  }
+}

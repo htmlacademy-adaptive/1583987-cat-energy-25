@@ -44,3 +44,13 @@
   line-height: 18px;
   color: $special_dark-grey;
 }
+
+@media (min-width: $tablet-width) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .card__image {
+    grid-row: 1/1;
+  }
+}
