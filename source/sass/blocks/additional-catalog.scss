@@ -12,7 +12,7 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 280px;
+  grid-template-columns: 1fr;
   gap: 30px;
 }
 
@@ -20,7 +20,7 @@
   list-style: none;
   margin: 0;
   display: grid;
-  grid-template-columns: 280px;
+  grid-template-columns: 1fr;
   gap: 15px;
 }
 
@@ -35,6 +35,67 @@
 }
 
 .additional-catalog__card-item {
+  display: flex;
+  justify-content: space-between;
   font-size: 14px;
   line-height: 14px;
+}
+
+.additional-catalog__gift {
+  margin-top: 25px;
+  background-image: url("../img/gift.png");
+  background-repeat: no-repeat;
+  padding: 0;
+  background-size: cover;
+  background-color: $basic_green;
+}
+
+.additional-catalog__gift-text {
+  padding: 190px 59px 40px 59px;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-catalog__card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .additional-catalog__card-button {
+    grid-column: 1/-1;
+  }
+
+  .additional-catalog__card-item {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-catalog__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 85px;
+  }
+
+  .additional-catalog__card {
+    grid-template-columns: repeat(3, minmax(245px, 1fr));
+    gap: 40px 40px;
+  }
+
+  .additional-catalog__card-button {
+    grid-column: 3/4;
+  }
+
+  .additional-catalog__card-button.button {
+    min-width: 245px;
+  }
+
+  .additional-catalog__gift-text {
+    padding: 185px 42px 42px 42px;
+    width: 245px;
+  }
 }
