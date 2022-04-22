@@ -31,6 +31,19 @@
   display: none;
 }
 
+.main-header--nojs .main-nav__toggle {
+  visibility: hidden;
+}
+
+.main-header--nojs .main-header__wrapper {
+  display: block;
+}
+
+.main-header--nojs .main-nav__wrapper {
+  position: static;
+  width: unset;
+}
+
 @media (min-width: $tablet-width) {
   .main-header__wrapper {
     margin: 25px auto;
@@ -47,6 +60,18 @@
   .main-header__logo-image-tablet {
     display: block;
     min-width: 174px;
+  }
+
+  .main-header--nojs .main-nav__toggle {
+    visibility: unset;
+  }
+
+  .main-header--nojs .main-header__wrapper {
+    display: flex;
+  }
+
+  .main-header--nojs .main-nav__wrapper {
+    position: unset;
   }
 }
 

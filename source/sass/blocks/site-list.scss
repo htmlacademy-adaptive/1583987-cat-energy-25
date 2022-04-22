@@ -7,6 +7,7 @@
   text-transform: uppercase;
   color: $black;
   list-style: none;
+  border-top: 1px solid $special_grey-5;
 }
 
 .site-list__item {
@@ -27,14 +28,6 @@
   &:active {
     opacity: 0.3;
   }
-
-  &--active {
-    border-bottom: 2px solid $basic_green;
-  }
-}
-
-.site-list__item--first {
-  border-top: 1px solid $special_grey-5;
 }
 
 @media (min-width: $tablet-width) {
@@ -45,14 +38,22 @@
     font-size: 18px;
     line-height: 1.33;
     font-weight: 400;
+    border: none;
   }
 
   .site-list__item {
+    position: relative;
     padding: 0;
     border: none;
 
-    &--active {
-      border-bottom: 2px solid $basic_green;
+    &--active::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      top: 34px;
+      left: 0;
+      width: 100%;
+      background-color: $basic_green;
     }
   }
 }
@@ -67,7 +68,7 @@
     }
   }
 
-  .site-list__item--active {
-    border-bottom: 2px solid $white;
+  .site-list__item--active::after {
+    background-color: $white;
   }
 }
