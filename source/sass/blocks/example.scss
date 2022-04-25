@@ -19,7 +19,7 @@
   line-height: 1.11;
   color: $black;
   text-align: start;
-  padding: 25px 0 40px 0;
+  padding: 25px 0 39px 0;
   margin: 0;
 }
 
@@ -48,7 +48,6 @@
   flex-direction: column;
   align-items: center;
   width: 124px;
-  padding-top: 15px;
 }
 
 .example__item-index {
@@ -65,7 +64,8 @@
   border-radius: 5px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding: 13px 0 19px 0;
+  box-sizing: border-box;
 }
 
 .example__item-description {
@@ -75,14 +75,19 @@
   width: 87px;
   height: 24px;
   margin: -12px 0 0 0;
-  padding: 0 14px 0 14px;
+  padding: 0 14px 0 10px;
   box-sizing: border-box;
   background-color: $special_grey-3;
   z-index: 1;
 }
 
+.example__text-container {
+  display: flex;
+  justify-content: center;
+}
+
 .example__text-effect {
-  padding: 20px 0 40px 0;
+  padding: 20px 2px 40px 0;
   margin: 0;
   font-family: $font_oswald;
   font-style: normal;
@@ -97,10 +102,6 @@
 .example__wrapper-image {
   background-color: $special_grey-3;
   padding-bottom: 40px;
-}
-
-.example__range {
-  margin-bottom: 40px;
 }
 
 .example__range-img-fat {
@@ -119,8 +120,10 @@
   display: flex;
   width: 210px;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 15px auto 0 auto;
+  padding: 5px 5px;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .example__range-bar {
@@ -164,7 +167,7 @@
   .example__wrapper-description {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    //align-items: center;
   }
 
   .example__wrapper-background-title {
@@ -176,7 +179,7 @@
     font-size: 60px;
     line-height: 1;
     padding: 0;
-    margin: 40px 0 60px 0;
+    margin: 42px 0 65px 0;
   }
 
   .example__wrapper-content {
@@ -187,7 +190,7 @@
   .example__text {
     font-size: 16px;
     line-height: 1.5;
-    margin: 0 0 40px 0;
+    margin: 0 0 54px 0;
 
     span {
       white-space: nowrap;
@@ -219,11 +222,14 @@
     z-index: 1;
   }
 
+  .example__text-container {
+    flex-direction: column;
+    align-items: end;
+  }
+
   .example__text-effect {
     font-size: 20px;
-    line-height: 1;
-    width: 174px;
-    text-align: right;
+    line-height: 1.5;
     margin: 0;
     padding: 0;
   }
@@ -235,7 +241,9 @@
   }
 
   .example__range-wrapper {
-    width: unset;
+    width: 592px;
+    margin-top: 25px;
+    padding: 0;
   }
 
   .example__range {
@@ -282,9 +290,12 @@
   }
 
   .example__range-label-name {
+    position: relative;
     font-size: 20px;
     line-height: 1.5;
-    border-bottom: 1px dashed rgba(0, 0, 0, 0.24);
+    padding: 5px 0;
+    margin: 0 10px;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.4);
   }
 
   .example__range-toggle {
@@ -331,11 +342,16 @@
     border: none;
   }
 
+  .example__wrapper-content {
+    padding-bottom: 75px;
+  }
+
   .example__wrapper-title {
     width: 435px;
   }
 
   .example__title {
+    margin-top: 39px;
     margin-bottom: 145px;
   }
 
@@ -344,7 +360,7 @@
   }
 
   .example__text {
-    margin-bottom: 55px;
+    margin-bottom: 69px;
   }
 
   .example__wrapper-description {
@@ -355,10 +371,18 @@
     background-color: $special_grey-3;
   }
 
+  .example__text-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: unset;
+  }
+
   .example__text-effect {
+    line-height: 1;
     width: unset;
     text-align: left;
     margin-top: 55px;
+    margin-right: 63px;
   }
 
   .example__wrapper-image {
@@ -367,11 +391,12 @@
 
   .example__range {
     width: 592px;
+    margin-top: -175px;
   }
 
   .example__range-wrapper {
     width: 592px;
-    margin: 0;
+    margin: 25px 0 0 0;
   }
 
   .example__img-wrapper {

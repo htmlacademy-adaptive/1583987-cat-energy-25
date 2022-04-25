@@ -77,6 +77,10 @@
     width: unset;
   }
 
+  .main-nav__list {
+    padding: 10px 0 0 0;
+  }
+
   .main-nav--opened .main-nav__list {
     display: flex;
     flex-wrap: wrap;
@@ -86,5 +90,9 @@
 @media (min-width: $desktop-width) {
   .main-nav__wrapper {
     background-color: transparent;
+  }
+
+  .main-nav__list {
+    padding: 9px 0 0 0;
   }
 }

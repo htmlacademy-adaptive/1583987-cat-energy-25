@@ -16,7 +16,6 @@
   text-align: center;
   border-bottom: 1px solid $special_grey-5;
 
-
   a {
     color: $black;
     text-decoration: none;
@@ -51,7 +50,7 @@
       content: "";
       position: absolute;
       height: 2px;
-      top: 34px;
+      top: 31px;
       left: 0;
       width: 100%;
       background-color: $basic_green;
@@ -70,6 +69,7 @@
   }
 
   .site-list__item--active::after {
+    top: 35px;
     background-color: $white;
   }
 }

@@ -1,5 +1,5 @@
 .features__wrapper {
-  margin: 0 auto 50px auto;
+  margin: 0 auto 46px auto;
 }
 
 .features__title {
@@ -52,10 +52,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .features__wrapper {
+    margin-bottom: 40px;
+  }
+
   .features__list {
     display: grid;
     grid-template-columns: repeat(2, 250px);
-    gap: 40px 135px;
+    gap: 31px 135px;
     counter-reset: section;
   }
 
@@ -83,31 +87,33 @@
   .features__title {
     font-size: 60px;
     line-height: 1;
-    margin-bottom: 30px;
+    margin-top: 46px;
+    margin-bottom: 32px;
   }
 
   .features__text {
     font-size: 16px;
-    padding: 110px 0 60px 0;
+    line-height: 1.5;
+    padding: 114px 0 60px 0;
     height: unset;
     background-position: 0 0;
     background-size: 80px 80px;
   }
 
   .features__text--leaf {
-    background-image: url("../img/leaf.svg");
+    background-image: url("../img/leaf-tablet.svg");
   }
 
   .features__text--powder {
-    background-image: url("../img/powder.svg");
+    background-image: url("../img/powder-tablet.svg");
   }
 
   .features__text--fork {
-    background-image: url("../img/fork.svg");
+    background-image: url("../img/fork-tablet.svg");
   }
 
   .features__text--watch {
-    background-image: url("../img/watch.svg");
+    background-image: url("../img/watch-tablet.svg");
   }
 }
 
