@@ -3,28 +3,30 @@
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 20px;
+  line-height: 1;
   text-transform: uppercase;
   color: $black;
   list-style: none;
-
-  &--close {
-    display: none;
-  }
-
-  &--open {
-    display: block;
-  }
+  border-top: 1px solid $special_grey-5;
 }
 
 .site-list__item {
   padding: 22px 0 24px 0;
   text-decoration: none;
   text-align: center;
+  border-bottom: 1px solid $special_grey-5;
 
   a {
     color: $black;
     text-decoration: none;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -34,28 +36,40 @@
     flex-wrap: wrap;
     gap: 35px;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.33;
     font-weight: 400;
+    border: none;
   }
 
   .site-list__item {
+    position: relative;
     padding: 0;
+    border: none;
+
+    &--active::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      top: 31px;
+      left: 0;
+      width: 100%;
+      background-color: $basic_green;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .site-list {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 1.5;
 
     a {
       color: $white;
     }
   }
 
-  .site-list--form {
-    a {
-      color: $black;
-    }
+  .site-list__item--active::after {
+    top: 35px;
+    background-color: $white;
   }
 }
