@@ -41,15 +41,12 @@
 
 .social__list {
   display: flex;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
-  width: 126px;
-  height: 22px;
 }
 
 .social__item {
-  margin: 0;
+  margin: 0 12px 0 12px;
   list-style: none;
 }
 
@@ -115,23 +112,24 @@
   .main-footer__wrapper {
     flex-direction: row;
     padding: 60px 0 55px 0;
+    justify-content: space-between;
   }
 
   .main-footer__logo {
-    margin-right: 155px;
+    width: auto;
     padding-bottom: 0;
     border-bottom: none;
-    width: 128px;
   }
 
   .main-footer__logo-link {
     justify-content: start;
+    width: 128px;
   }
 
   .main-footer__social {
-    margin-right: 129px;
     padding: 0;
-    width: 132px;
+    padding-left: 24px;
+    width: unset;
     border-bottom: none;
   }
 
@@ -153,5 +151,10 @@
 
   .main-footer__social {
     margin-right: 0;
+  }
+
+  .social__list {
+    position: relative;
+    top:-4px;
   }
 }
