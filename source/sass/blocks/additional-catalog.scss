@@ -44,7 +44,7 @@
   display: grid;
   grid-template-columns: 1fr;
   padding-bottom: 18px;
-  border-bottom: 1px solid $special_grey-1
+  border-bottom: 1px solid $special_grey-1;
 }
 
 .additional-catalog__card-title {
@@ -105,10 +105,6 @@
 
   .additional-catalog__title-line::after {
     top: 88px;
-  }
-
-  .additional-catalog__list {
-
   }
 
   .additional-catalog__card {
