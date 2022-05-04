@@ -68,8 +68,16 @@
     }
   }
 
+  .site-list.site-list--catalog a {
+    color: $black;
+  }
+
   .site-list__item--active::after {
     top: 35px;
     background-color: $white;
+  }
+
+  .site-list__item--catalog.site-list__item--active::after {
+    background-color: $basic_green;
   }
 }
