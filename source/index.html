@@ -4,6 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat energy</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicons/apple-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
@@ -11,9 +15,11 @@
   <div class="main-header__wrapper wrapper">
     <div class="main-header__logo-wrapper">
       <a class="main-header__logo-link" href="index.html">
-        <img class="main-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Кэт энерджи">
-        <img class="main-header__logo-image-tablet" src="img/logo-tablet.svg" width="174" height="52" alt="Кэт энерджи">
-        <img class="main-header__logo-image-desktop" src="img/logo-desktop.svg" width="202" height="59" alt="Кэт энерджи">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="main-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Кэт энерджи">
+        </picture>
       </a>
     </div>
     <nav class="main-nav main-nav--opened ">
@@ -45,10 +51,12 @@
       </div>
     </div>
     <div class="main-banner__wrapper wrapper">
-      <img src="img/cat-mobile1.png" alt="Cat energy pro" class="main-banner__img" width="280" height="270">
-      <img src="img/index-cat-tablet 1.png" alt="Cat energy pro" class="main-banner__img-tablet" width="709" height="609">
-      <img src="img/index-cat-desktop.png" alt="Cat energy pro" class="main-banner__img-desktop" width="552" height="499">
-      <a class="main-banner__button button" href="#">подобрать программу</a>
+      <picture>
+        <source media="(min-width: 1300px)" srcset="img/index-cat-desktop.png 1x, img/index-cat-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/index-cat-tablet.png 1x, img/index-cat-tablet@2x.png 2x">
+        <img src="img/index-cat-mobile.png" srcset="img/index-cat-mobil@2x.png 2x" alt="Cat energy pro" class="main-banner__img" width="280" height="270">
+      </picture>
+      <a class="main-banner__button button" href="form.html">подобрать программу</a>
     </div>
   </section>
   <section class="programs">
@@ -137,12 +145,18 @@
       <div class="example__wrapper-image">
         <div class="example__range wrapper">
           <div class="example__img-wrapper">
-            <img class="example__range-img-fat" src="img/cat-fat.png" width="280" height="232" alt="толстый кот">
-            <img class="example__range-img-fat-tablet" src="img/cat-fat-tablet.png" width="677" height="520" alt="толстый кот">
-            <img class="example__range-img-skinny" src="img/cat-skinny.png" width="545" height="520" alt="худой кот">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-fat-tablet.png 1x, img/cat-fat-tablet@2x.png 2x">
+              <img class="example__range-img-fat" src="img/cat-fat-mobile.png" srcset="img/cat-fat-mobile@2x.png 2x" width="280" height="232" alt="толстый кот">
+            </picture>
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-skinny-tablet.png 1x, img/cat-skinny-tablet@2x.png 2x">
+              <img class="example__range-img-skinny" src="img/cat-skinny-mobile.png" srcset="img/cat-skinny-mobile@2x.png 2x" width="247" height="232" alt="худой кот">
+            </picture>
           </div>
           <div class="example__range-wrapper">
-            <span class="example__range-label-name">было</span>
+            <button class="example__range-label-name-prev" type="button">было
+            </button>
             <div class="example__range-bar">
               <div class="example__range-bar-inner">
                 <button class="example__range-toggle " type="button">
@@ -150,7 +164,8 @@
                 </button>
               </div>
             </div>
-            <span class="example__range-label-name">стало</span>
+            <button class="example__range-label-name-next" type="button">стало
+            </button>
           </div>
         </div>
       </div>

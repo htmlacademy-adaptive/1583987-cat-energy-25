@@ -32,13 +32,20 @@
   color: $black;
   padding-right: 50px;
   background-image: url("../img/arrow.svg");
-  background-size: 32px 12px;
+  background-size: 25px 12px;
   background-repeat: no-repeat;
-  background-position: center right 0;
+  background-position: center right 7px;
 
+
+  &:hover {
+    background-size: 32px 12px;
+    background-position: center right 0;
+  }
 
   &:active {
     opacity: 0.3;
+    background-size: 32px 12px;
+    background-position: center right 0;
   }
 }
 
@@ -85,15 +92,11 @@
     padding: 79px 315px 55px 51px;
 
     &--slim {
-      background-image: url("../img/cat_back-tablet.svg");
-      background-repeat: no-repeat;
       background-position: top 81px right 62px;
       background-size: 200px 211px;
     }
 
     &--pro {
-      background-image: url("../img/cat_walk-tablet.svg");
-      background-repeat: no-repeat;
       background-position: top 91px right 28px;
       background-size: 268px 200px;
     }
@@ -141,15 +144,11 @@
     padding-right: 50px;
 
     &--slim {
-      background-image: url("../img/cat_back-desktop.svg");
-      background-repeat: no-repeat;
       background-position: top 40px left 50px;
       background-size: 100px 106px;
     }
 
     &--pro {
-      background-image: url("../img/cat_back-walk.svg");
-      background-repeat: no-repeat;
       background-position: top 45px left 30px;
       background-size: 134px 100px;
     }

@@ -71,11 +71,15 @@
 
 .additional-catalog__gift {
   margin: 35px 0;
-  background-image: url("../img/gift.png");
+  background-image: url("../img/gift.jpg");
   background-repeat: no-repeat;
   padding: 0;
   background-size: cover;
   background-color: $basic_green;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-mobile@2x.jpg");
+  }
 }
 
 .additional-catalog__gift-text {
@@ -149,7 +153,12 @@
 
   .additional-catalog__gift {
     margin: 69px 0 76px 0;
-    background-position: right 0 top -315px;
+    background-position: right 0 top -300px;
+    background-image: url("../img/gift-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-tablet@2x.jpg");
+    }
   }
 
   .additional-catalog__gift-text {
@@ -202,7 +211,12 @@
 
   .additional-catalog__gift {
     margin: 0;
-    background-position: unset;
+    background-position: right 0 top 0;
+    background-image: url("../img/gift.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-mobile@2x.jpg");
+    }
   }
 
   .additional-catalog__gift-text {
