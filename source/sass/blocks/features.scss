@@ -27,28 +27,46 @@
 }
 
 .features__text {
+  position: relative;
   margin: 0;
   padding: 0 0 0 80px;
   height: 60px;
   background-repeat: no-repeat;
-  background-position: center left 0;
-  background-size: 60px 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $basic_green;
+    z-index: -2;
+  }
 }
 
 .features__text--leaf {
   background-image: url("../img/leaf.svg");
+  background-size: 31px 32px;
+  background-position: center left 17px;
 }
 
 .features__text--powder {
   background-image: url("../img/powder.svg");
+  background-size: 29px 31px;
+  background-position: center left 16px;
 }
 
 .features__text--fork {
   background-image: url("../img/fork.svg");
+  background-size: 25px 30px;
+  background-position: center left 18px;
 }
 
 .features__text--watch {
   background-image: url("../img/watch.svg");
+  background-size: 32px 33px;
+  background-position: center left 14px;
 }
 
 @media (min-width: $tablet-width) {
@@ -96,24 +114,34 @@
     line-height: 1.5;
     padding: 114px 0 60px 0;
     height: unset;
-    background-position: 0 0;
-    background-size: 80px 80px;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 80px;
+      height: 80px;
+      background-color: $basic_green;
+      z-index: -2;
+    }
   }
 
   .features__text--leaf {
-    background-image: url("../img/leaf-tablet.svg");
+    background-position: top 25px left 24px;
   }
 
   .features__text--powder {
-    background-image: url("../img/powder-tablet.svg");
+    background-position: top 24px left 25px;
   }
 
   .features__text--fork {
-    background-image: url("../img/fork-tablet.svg");
+    background-position: top 25px left 28px;
   }
 
   .features__text--watch {
-    background-image: url("../img/watch-tablet.svg");
+    background-position: top 24px left 23px;
   }
 }
 

@@ -4,6 +4,11 @@
   background-size: cover;
   padding: 27px 0 164px 0;
   background-color: $basic_green;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/green-cat-mobile@2x.png");
+  }
 }
 
 .main-banner__title {
@@ -43,7 +48,7 @@
 
 @media (min-width: $tablet-width) {
   .main-banner__img {
-    display: none;
+    width: 100%;
   }
 
   .main-banner__img-tablet {
@@ -54,6 +59,7 @@
     background-image: none;
     background-color: $white;
     padding: 0;
+    box-shadow: none;
   }
 
   .main-banner__title {
@@ -92,15 +98,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-banner__img-tablet {
-    display: none;
-  }
-
-  .main-banner__img-desktop {
+  .main-banner__img {
     position: absolute;
     top: -555px;
     left: 448px;
     display: block;
+    width: 552px;
   }
 
   .button.main-banner__button {
@@ -121,9 +124,13 @@
   }
 
   .main-banner__container {
-    background-image: url("../img/greencat desktop.png");
+    background-image: url("../img/greencat-desktop.png");
     background-position: right 0 top 0;
     background-size: 50% auto;
     height: 696px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/green-cat-desktop@2x.png");
+    }
   }
 }
