@@ -50,26 +50,31 @@
   list-style: none;
 }
 
+.social__icon,
+.main-footer__copyright-icon {
+  color: $special_dark-grey-3;
+}
+
 .social__link {
   display: block;
   width: 28px;
   height: 22px;
 
-  svg {
+  .social__icon {
     width: 28px;
     height: 22px;
   }
 
-  &:hover path {
-    fill: $basic_green;
+  &:hover .social__icon {
+    color: $basic_green;
   }
 
   &:active {
     opacity: 0.3;
   }
 
-  &:active path {
-    fill: $basic_green;
+  &:active .social__icon {
+    color: $basic_green;
   }
 }
 
@@ -91,20 +96,20 @@
   justify-content: space-between;
   align-items: center;
 
-  svg {
+  .main-footer__copyright-icon {
     width: 27px;
   }
 
-  &:hover path {
-    fill: $basic_green;
+  &:hover .main-footer__copyright-icon {
+    color: $basic_green;
   }
 
   &:active {
     opacity: 0.3;
   }
 
-  &:active path {
-    fill: $basic_green;
+  &:active .main-footer__copyright-icon {
+    color: $basic_green;
   }
 }
 
