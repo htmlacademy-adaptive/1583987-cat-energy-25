@@ -134,30 +134,29 @@
   }
 }
 
-.form__group-input-text:focus + svg line,
-.form__group-input-text:focus + svg path {
-  stroke: $basic_green;
+.form__group-input-text:focus + .form__group-input-icon {
+  color: $basic_green;
 }
 
-.form__group-input-text--error + svg line,
-.form__group-input-text--error + svg path {
-  stroke: $status_error;
+.form__group-input-text--error + .form__group-input-icon {
+  color: $status_error;
 }
 
 .form__group-input-text-wrapper {
   position: relative;
   flex-grow: 2;
 
-  svg {
+  .form__group-input-icon {
     position: absolute;
     top: 16px;
     right: 15px;
     width: 20px;
     height: 14px;
+    color: $special_black1;
   }
 }
 
-.form__group-input-text-wrapper--tel svg {
+.form__group-input-text-wrapper--tel .form__group-input-icon {
   top: 11px;
   height: 20px;
 }
