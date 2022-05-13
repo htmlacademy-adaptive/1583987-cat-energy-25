@@ -71,18 +71,16 @@
 }
 
 @media (min-width: $desktop-width) {
-  .contacts {
+  .contacts__main-wrapper {
     position: relative;
+    margin-bottom: -293px;
   }
 
   .contacts__wrapper {
-    position: absolute;
     background-color: $white;
     width: 565px;
-    padding: 55px 80px;
+    padding: 59px 80px;
     box-sizing: border-box;
-    top: 96px;
-    left: 110px;
   }
 
   .contacts__address {
