@@ -18,7 +18,7 @@
   line-height: 1.25;
   text-transform: uppercase;
   color: $special_dark-grey-2;
-  margin: 0 0 16px 0;
+  margin: 0 0 10px 0;
   width: 76px;
 
   &--show-more {
@@ -45,7 +45,7 @@
 .card__list {
   font-size: 12px;
   line-height: 1.33;
-  margin: 0 0 8px 0;
+  margin: 2px 0 8px 0;
 }
 
 .card__item {
@@ -72,7 +72,7 @@
 .card__button.button {
   font-size: 16px;
   line-height: 1.25;
-  margin-top: 12px;
+  margin-top: 7px;
 }
 
 .card__button.card__button--show-more {
@@ -177,11 +177,12 @@
   }
 
   .card__list {
-    margin: 0 6px 33px 6px;
+    margin: 5px 6px 33px 6px;
   }
 
   .card__title {
-    padding: 0 20px 0 15px;
+    padding: 4px 20px 0 20px;
+    line-height: 1;
   }
 
   .card__image {
@@ -204,7 +205,7 @@
   }
 
   .card__wrapper--show-more {
-    padding: 51px 38px 41px 38px;
+    padding: 55px 35px 41px 31px;
     box-sizing: border-box;
   }
 }
