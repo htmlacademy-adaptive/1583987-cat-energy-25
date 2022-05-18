@@ -71,13 +71,13 @@
 
 @media (min-width: $tablet-width) {
   .features__wrapper {
-    margin-bottom: 40px;
+    margin-bottom: 36px;
   }
 
   .features__list {
     display: grid;
     grid-template-columns: repeat(2, 250px);
-    gap: 31px 135px;
+    gap: 26px 135px;
     counter-reset: section;
   }
 
@@ -102,6 +102,10 @@
     }
   }
 
+  .features__item--first.features__item::before {
+    right: 25px;
+  }
+
   .features__title {
     font-size: 60px;
     line-height: 1;
@@ -112,7 +116,7 @@
   .features__text {
     font-size: 16px;
     line-height: 1.5;
-    padding: 114px 0 60px 0;
+    padding: 114px 0 65px 0;
     height: unset;
 
 
@@ -153,6 +157,10 @@
 
   .features__list {
     grid-template-columns: repeat(4, 250px);
-    gap: 40px 73px;
+    gap: 40px 75px;
+  }
+
+  .features__text {
+    padding: 115px 0 55px 0;
   }
 }

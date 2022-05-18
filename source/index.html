@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat energy</title>
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="images/favicons/apple-icon.png">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body">
 <header class="main-header wrapper main-header--nojs">
@@ -52,6 +52,9 @@
     </div>
     <div class="main-banner__wrapper wrapper">
       <picture>
+        <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-cat-desktop.webp 1x, img/index-cat-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/index-cat-tablet.webp 1x, img/index-cat-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/index-cat-mobil.webp 1x, img/index-cat-mobil@2x.webp 2x">
         <source media="(min-width: 1300px)" srcset="img/index-cat-desktop.png 1x, img/index-cat-desktop@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/index-cat-tablet.png 1x, img/index-cat-tablet@2x.png 2x">
         <img src="img/index-cat-mobile.png" srcset="img/index-cat-mobil@2x.png 2x" alt="Cat energy pro" class="main-banner__img" width="280" height="270">
@@ -84,7 +87,7 @@
     <div class="features__wrapper wrapper">
       <h2 class="features__title">Как это работает</h2>
       <ul class="features__list">
-        <li class="features__item">
+        <li class="features__item features__item--first">
           <p class="features__text features__text--leaf">Функциональное питание
             содержит только полезные
             питательные вещества.</p>
@@ -146,10 +149,14 @@
         <div class="example__range wrapper">
           <div class="example__img-wrapper">
             <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-fat-tablet.webp 1x, img/cat-fat-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/cat-fat-mobile.webp 1x, img/cat-fat-mobile@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/cat-fat-tablet.png 1x, img/cat-fat-tablet@2x.png 2x">
               <img class="example__range-img-fat" src="img/cat-fat-mobile.png" srcset="img/cat-fat-mobile@2x.png 2x" width="280" height="232" alt="толстый кот">
             </picture>
             <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-skinny-tablet.webp 1x, img/cat-skinny-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/cat-skinny-mobile.webp 1x,img/cat-skinny-mobile@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/cat-skinny-tablet.png 1x, img/cat-skinny-tablet@2x.png 2x">
               <img class="example__range-img-skinny" src="img/cat-skinny-mobile.png" srcset="img/cat-skinny-mobile@2x.png 2x" width="247" height="232" alt="худой кот">
             </picture>
@@ -174,9 +181,14 @@
   </section>
   <section class="contacts">
     <h2 class="visually-hidden">Контакты</h2>
-    <div class="contacts__wrapper wrapper">
-      <p class="contacts__slogan">приглашаем <br> к сотрудничеству дилеров!</p>
-      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <br> <br> Санкт-Петербург</p>
+    <div class="contacts__main-wrapper wrapper">
+      <div class="contacts__wrapper">
+        <p class="contacts__slogan">приглашаем <br> к сотрудничеству дилеров!</p>
+        <div class="contacts__wrapper-address">
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <br></p>
+        <p class="contacts__address-city"> Санкт-Петербург</p>
+      </div>
+      </div>
     </div>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1650368468649!5m2!1sru!2sru" width=100% height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
