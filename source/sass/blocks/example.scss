@@ -236,11 +236,13 @@
   .example__text-container {
     flex-direction: column;
     align-items: end;
+    gap: 10px;
+    padding-bottom: 10px;
   }
 
   .example__text-effect {
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1;
     margin: 0;
     padding: 0;
   }
@@ -359,7 +361,7 @@
     background-color: $special_grey-3;
     margin-top: 175px;
     padding-top: 1px;
-    padding-bottom: 95px;
+    padding-bottom: 82px;
   }
 
   .example__wrapper-background {
@@ -383,7 +385,7 @@
 
   .example__title {
     margin-top: 39px;
-    margin-bottom: 145px;
+    margin-bottom: 148px;
   }
 
   .example__wrapper-text {
@@ -413,7 +415,7 @@
     width: unset;
     text-align: left;
     margin-top: 55px;
-    margin-right: 63px;
+    margin-right: 56px;
   }
 
   .example__wrapper-image {
