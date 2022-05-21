@@ -39,45 +39,6 @@
   border-bottom: 1px solid $special_grey-6;
 }
 
-.social__list {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.social__item {
-  margin: 0 12px 0 12px;
-  list-style: none;
-}
-
-.social__icon,
-.main-footer__copyright-icon {
-  color: $special_dark-grey-3;
-}
-
-.social__link {
-  display: block;
-  width: 28px;
-  height: 22px;
-
-  .social__icon {
-    width: 28px;
-    height: 22px;
-  }
-
-  &:hover .social__icon {
-    color: $basic_green;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  &:active .social__icon {
-    color: $basic_green;
-  }
-}
-
 .main-footer__copyright {
   padding-top: 22px;
   width: 100%;
@@ -156,10 +117,5 @@
 
   .main-footer__social {
     margin-right: 0;
-  }
-
-  .social__list {
-    position: relative;
-    top: -4px;
   }
 }
