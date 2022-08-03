@@ -106,10 +106,19 @@
 
 .example__range-img-fat {
   display: block;
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .example__range-img-skinny {
   display: none;
+
+  &--visible {
+    display: block;
+    height: 232px;
+  }
 }
 
 .example__range-wrapper {
@@ -285,7 +294,7 @@
   .example__range-img-fat {
     display: block;
     width: 296px;
-    height: 96%;
+    height: 100%;
     object-fit: cover;
     object-position: left;
   }
@@ -293,9 +302,9 @@
   .example__range-img-skinny {
     display: block;
     width: 296px;
-    height: 98%;
+    height: 100%;
     object-fit: cover;
-    object-position: 100% 4px;
+    object-position: right;
   }
 
   .example__range-label-name-prev,
@@ -354,6 +363,57 @@
       border: 1px solid $basic_green;
     }
   }
+
+  .example__range-bar .noUi-handle {
+    position: relative;
+    display: block;
+    padding: 0;
+    width: 34px;
+    height: 34px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: $white;
+    border: 1px solid $basic_grey;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+    top: -16px;
+    right: -25px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      top: 12px;
+      left: 12px;
+      background-color: $basic_green;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    &:hover {
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+      border: 1px solid $basic_green;
+    }
+  }
+
+  .example__range-bar .noUi-connect {
+    background-color: transparent;
+  }
+}
+
+.example__range-bar .noUi-connects {
+  height: 6px;
+  width: 426px;
+  background-color: $special_grey;
+  border-radius: 6px;
 }
 
 @media (min-width: $desktop-width) {
